@@ -30,6 +30,11 @@
     .container{
       padding:30px;
     }
+    li.nav-item:hover ul.dropdown-menu{
+      display:block;
+
+    }
+
   </style>
   <body>
     
@@ -47,7 +52,7 @@
           <a class="nav-link active" aria-current="page" href="index.html">Home</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="leadership.html" id="myHref" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" id="myHref" id="navbarDropdown" role="button" data-target="leadership.html"  target="_blank" href="leadership.html" class="btn btn-default dropdown-toggle">
             Leadership
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -135,7 +140,7 @@
     revenues until we consummate our initial business combination.</p>
     </div>
     <script>
- 
+
     </script>
 
     <!-- Optional JavaScript; choose one of the two! -->
