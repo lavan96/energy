@@ -17,19 +17,21 @@
         height:auto;
     }
     nav{
-      background-color: black;
+      background-color: white;
     }
     a{
-      color:white;
+      color:#001178;
     }
     a:hover{
-      color:cornsilk;
+      color:#001178;
     }
     #navtoggle{
       color:white;
     }
     .container{
       padding:30px;
+      background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 35%, rgba(0,148,68,1) 100%);
     }
     li.nav-item:hover ul.dropdown-menu{
       display:block;
@@ -38,17 +40,14 @@
     h1{
       font-family: 'Hammersmith One', sans-serif;
       text-transform: uppercase;
-      font-size: 60px;
+      font-size: 50px;
       padding-bottom:10px;
       padding-top:10px;
 
     }
-    h2{
-        font-family: 'Hammersmith One', sans-serif;
-        font-size:27px;
-    }
     body{
       font-family: 'Roboto', sans-serif;
+      color: white;
     }
 
     h4{
@@ -60,25 +59,29 @@
     
 
      .footer{
-      background-color:  #000000;
-      color: #ffffff;
+      background-color:white;
+      color: #001178;
       font-family: 'Hammersmith One', sans-serif;
+      padding:30px;
      }
 
      .footertext{
        font-size: 10px;
      }
 
+     #logo{
+         width:150px;
+     }
   </style>
   <body>
     
 
     
-    <nav class="navbar navbar-expand-lg bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="logo.png" alt="" id="logo"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"><img src="navbar.png" alt="" style="width:30px; margin:auto"></span>
+      <span class="navbar-toggler-icon"><img src="navbar-1.png" alt="" style="width:30px; margin:auto"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -164,10 +167,10 @@
     </div>
     <div>      
         <footer class="footer pt-5 pb-5"  id="footer">
-        <div class="container"  id="footer">
+        <div id="footer">
         <div class="row">
-          <div class="col-md-2">
-            <img src="logo-final.png" class="img-fluid">
+          <div class="col-md-2" style="margin-top: 20px;">
+            <img src="logo.png" class="img-fluid">
           </div>
           <div class="col-md-2">
             <h4 href="index.html">Home</h4>
