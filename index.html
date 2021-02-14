@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@600&family=Hammersmith+One&family=Roboto&display=swap" rel="stylesheet">
     <title>Intenergy</title>
   </head>
 
@@ -19,9 +19,14 @@
     nav{
       background-color: white;
     }
+    .nav-item{
+      margin-left: 50px;
+
+    }
     a{
       color:#001178;
       text-decoration: none;
+      font-family: 'Hammersmith One', sans-serif;
     }
     a:hover{
       color:#001178;
@@ -49,6 +54,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 35%, rgba(0,148,68,1) 100%);
     }
     body{
       font-family: 'Roboto', sans-serif;
+      font-family: 'Hammersmith One', sans-serif;
       color: white;
     }
 
@@ -69,10 +75,66 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 35%, rgba(0,148,68,1) 100%);
 
      .footertext{
        font-size: 10px;
+       
      }
 
      #logo{
-         width:150px;
+         width:200px;
+     }
+     p{
+      font-family: 'Roboto', sans-serif;
+     }
+     .carousel-caption{
+       bottom:250px;
+     }
+     .carousel-text{
+      font-size: 100px;
+     }
+     h2{
+      font-family: 'Baloo Tamma 2', cursive;
+      text-transform: uppercase;
+     }
+     @media screen and (max-width: 768px) {
+      .carousel-item{
+        height:auto;
+    }
+    .nav-link{
+      margin-left: 10px;
+      color:white;
+    }
+    .nav-link:hover{
+      margin-left: 10px;
+      color:cornsilk;
+    }
+    .dropdown-menu{
+      background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 35%, rgba(0,148,68,1) 100%);
+
+    }
+    .dropdown-item{
+      color:white;
+
+    }
+    .dropdown-item:hover{
+      color:cornsilk;
+      background-color: transparent;
+
+    }
+    nav{
+      background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 35%, rgba(0,148,68,1) 100%);
+margin:0px;
+    }
+    li{
+      color:white;
+    }
+    .navbar-brand{
+      background-image: url(logo-1.png);
+
+    }
+    span{
+      background-image: url(navbar-2.png);
+    }
      }
   </style>
   <body>
@@ -83,10 +145,10 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 35%, rgba(0,148,68,1) 100%);
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html"><img src="logo.png" alt="" id="logo"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"><img src="navbar-1.png" alt="" style="width:30px; margin:auto"></span>
+      <span class="navbar-toggler-icon"><img src="navbar-2.png" alt="" style="width:30px; margin:auto"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav me-auto pb-2 pb-lg-0">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="index.html">Home</a>
         </li>
@@ -128,27 +190,35 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 35%, rgba(0,148,68,1) 100%);
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="1.jpg" class="d-block w-100" alt="...">
+        <img src="1.png" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
+          <h2 class="carousel-text">Leadership</h2>
+          
         </div>
       </div>
       <div class="carousel-item">
-        <img src="2.jpg" class="d-block w-100" alt="...">
+        <img src="2.png" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
+          <h2 class="carousel-text">Acquisition Criteria</h2>
+          
         </div>
       </div>
       <div class="carousel-item">
-        <img src="3.jpg" class="d-block w-100" alt="...">
+        <img src="3.png" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
+          <h2 class="carousel-text">Investor Relations</h2>
+          
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="4.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="carousel-text">Contact</h2>
+          
         </div>
       </div>
     </div>

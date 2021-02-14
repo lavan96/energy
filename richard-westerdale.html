@@ -22,6 +22,7 @@
     a{
       color:#001178;
       text-decoration: none;
+      font-family: 'Hammersmith One', sans-serif;
     }
     a:hover{
       color:#001178;
@@ -32,8 +33,7 @@
     }
     .container{
       padding:30px;
-      background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 35%, rgba(0,148,68,1) 100%);
+      background-color:white;
     }
     li.nav-item:hover ul.dropdown-menu{
       display:block;
@@ -49,7 +49,8 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 35%, rgba(0,148,68,1) 100%);
     }
     body{
       font-family: 'Roboto', sans-serif;
-      color: white;
+      font-family: 'Hammersmith One', sans-serif;
+      color: black;
     }
 
     h4{
@@ -72,7 +73,58 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 35%, rgba(0,148,68,1) 100%);
      }
 
      #logo{
-         width:150px;
+         width:200px;
+     }
+     p{
+      font-family: 'Roboto', sans-serif;
+     }
+     .carousel-caption{
+       bottom:250px;
+     }
+     .carousel-text{
+      font-size: 100px;
+     }
+     @media screen and (max-width: 768px) {
+      .carousel-item{
+        height:auto;
+    }
+    .nav-link{
+      margin-left: 10px;
+      color:white;
+    }
+    .nav-link:hover{
+      margin-left: 10px;
+      color:cornsilk;
+    }
+    .dropdown-menu{
+      background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 35%, rgba(0,148,68,1) 100%);
+
+    }
+    .dropdown-item{
+      color:white;
+
+    }
+    .dropdown-item:hover{
+      color:cornsilk;
+      background-color: transparent;
+
+    }
+    nav{
+      background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 35%, rgba(0,148,68,1) 100%);
+margin:0px;
+    }
+    li{
+      color:white;
+    }
+    .navbar-brand{
+      background-image: url(logo-1.png);
+
+    }
+    span{
+      background-image: url(navbar-2.png);
+    }
      }
   </style>
   <body>
@@ -83,7 +135,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 35%, rgba(0,148,68,1) 100%);
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"><img src="logo.png" alt="" id="logo"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"><img src="navbar-1.png" alt="" style="width:30px; margin:auto"></span>
+      <span class="navbar-toggler-icon"><img src="navbar-2.png" alt="" style="width:30px; margin:auto"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
