@@ -8,21 +8,30 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
     <title>Intenergy</title>
   </head>
 
   <style>
     .carousel-item{
-        height:600px;
+        height:auto;
     }
     nav{
       background-color: white;
     }
+    .nav-item{
+      margin-left: auto;
+      padding-left: 50px;
+
+    }
+
+    #home{
+      padding-left: 50px;
+    }
     a{
       color:#001178;
       text-decoration: none;
-      font-family: 'Hammersmith One', sans-serif;
+      font-family: 'Playfair Display', serif;
     }
     a:hover{
       color:#001178;
@@ -33,42 +42,35 @@
     }
     .container{
       padding:30px;
-      background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 35%, rgba(0,148,68,1) 100%);}
-
+      background-color: white;
+    }
     li.nav-item:hover ul.dropdown-menu{
       display:block;
 
     }
     h1{
-      font-family: 'Hammersmith One', sans-serif;
-      text-transform: uppercase;
-      font-size: 60px;
+      font-family: 'Playfair Display', serif;
+      color: #001178;
+      font-size: 50px;
       padding-bottom:10px;
       padding-top:10px;
-      color:white;
 
     }
     body{
       font-family: 'Roboto', sans-serif;
-      font-family: 'Hammersmith One', sans-serif;
-      color: white;
-    }
-
-    .card{
-        margin:10px;
-        color:black;
+      font-family: 'Playfair Display', serif;
+      color: #001178;
     }
 
     h4{
-      font-size: 20px;
+      font-size: 30px;
       padding-top: 25px;
-      padding-bottom: 3px;
+      padding-bottom: 25px;
     }
 
     
 
-    .footer{
+     .footer{
       background-color:white;
       color: #001178;
       font-family: 'Hammersmith One', sans-serif;
@@ -76,14 +78,11 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 35%, rgba(0,148,68,1) 100%);}
      }
 
      .footertext{
-       font-size: 10px;
+       font-size: 15px;
+       
      }
 
-     .btn{
-        background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 35%, rgba(0,148,68,1) 100%);
-     }
-     #logo{
+     .logo{
          width:200px;
      }
      p{
@@ -98,6 +97,17 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 35%, rgba(0,148,68,1) 100%);
      h2{
       font-family: 'Baloo Tamma 2', cursive;
       text-transform: uppercase;
+     }
+     .profilepic{
+         width: 300px;
+         background-size: cover;
+         padding-bottom: 30px;
+     }
+     .card-title{
+         padding-top: 20px;
+     }
+     .card-text{
+         padding-bottom: 50px;
      }
      @media screen and (max-width: 768px) {
       .carousel-item{
@@ -138,6 +148,11 @@ margin:0px;
     
 
     }
+
+    #home{
+      padding-left: 0px;
+      margin-top: 30px;
+    }
     span{
       background-image: url(navbar-2.png);
     }
@@ -153,6 +168,19 @@ margin:0px;
     #web{
       display:none;
     }
+
+    #secondrow{
+        margin-top:20px;
+    }
+
+    #firstrow{
+        margin-top:20px;
+    }
+    .profilepic{
+         width: 400px;
+         background-size: cover;
+         padding-bottom: 30px;
+     }
      }
 
      @media screen and (min-width: 769px){
@@ -172,7 +200,12 @@ margin:0px;
     
 
     }
+
+    #secondrow{
+        margin-top:20px;
+    }
      }
+
   </style>
   <body>
     
@@ -226,59 +259,56 @@ margin:0px;
 <div class="container">
   <h1>Leadership</h1>
   <div class="row" style="padding-top:20px;">
-    <div class="col-sm-4">
-      <div class="card">
-        <div class="card-body">
+    <div class="col-sm-4" id="firstrow">
+        <a href="richard-westerdale.html">
+            <img src="dummy-profile.jpg" alt="" class="profilepic">
           <h5 class="card-title">Richard W. Westerdale II</h5>
           <p class="card-text">Chief Executive Officer and Chairman of Board</p>
-          <a href="richard-westerdale.html" class="btn btn-primary">Read More</a>
-        </div>
-      </div>
+          </a>
+ 
     </div>
-    <div class="col-sm-4">
-      <div class="card">
-        <div class="card-body">
+    <div class="col-sm-4" id="firstrow">
+        <a href="christopher_close.html">
+            <img src="dummy-profile.jpg" alt="" class="profilepic">
           <h5 class="card-title">Christopher J. Close</h5>
           <p class="card-text">Chief Financial Officer</p>
-          <a href="christopher_close.html" class="btn btn-primary">Read More</a>
-        </div>
-      </div>
-    </div><div class="col-sm-4">
-        <div class="card">
-          <div class="card-body">
+          </a>
+     
+    </div><div class="col-sm-4" id="firstrow">
+        <a href="narinder-singh.html"></a>
+        <img src="dummy-profile.jpg" alt="" class="profilepic">
             <h5 class="card-title">Narinder Singh</h5>
             <p class="card-text"> Chief Strategy Officer</p>
-            <a href="narinder-singh.html" class="btn btn-primary">Read More</a>
-          </div>
-        </div>
-      </div>
-  </div><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Jan-Hein Jesse</h5>
-          <p class="card-text">Member of the Board</p>
-          <a href="jan-hein-jesse.html" class="btn btn-primary">Read More</a>
-        </div>
+            </a>
+        
       </div>
     </div>
-    <div class="col-sm-4">
-      <div class="card">
-        <div class="card-body">
+  <div class="row">
+    <div class="col-sm-4" id="secondrow">
+        <a href="jan-hein-jesse.html">
+            <img src="dummy-profile.jpg" alt="" class="profilepic">
+          <h5 class="card-title">Jan-Hein Jesse</h5>
+          <p class="card-text">Member of the Board</p>
+          </a>
+       
+      
+    </div>
+    <div class="col-sm-4" id="secondrow">
+        <a href="angela-minas.html">
+            <img src="dummy-profile.jpg" alt="" class="profilepic">
           <h5 class="card-title">Angela A. Minas</h5>
           <p class="card-text">Member of the Board</p>
-          <a href="angela-minas.html" class="btn btn-primary">Read More</a>
-        </div>
+         </a>
+        
       </div>
-    </div><div class="col-sm-4">
-        <div class="card">
-          <div class="card-body">
+    <div class="col-sm-4" id="secondrow">
+        <a href="david-phillips.html">
+            <img src="dummy-profile.jpg" alt="" class="profilepic">
             <h5 class="card-title">David L. Phillips</h5>
             <p class="card-text">Member of the Board</p>
-            <a href="david-phillips.html" class="btn btn-primary">Read More</a>
+        </a>
           </div>
-        </div>
+       
       </div>
   </div>
     </div>
