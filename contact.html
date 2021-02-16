@@ -44,10 +44,7 @@
       padding:30px;
       background-color: white;
     }
-    li.nav-item:hover ul.dropdown-menu{
-      display:block;
-
-    }
+    
     h1{
       font-family: 'Playfair Display', serif;
       text-transform: uppercase;
@@ -131,6 +128,7 @@ height:50px;
     .dropdown-menu{
       background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 35%, rgba(0,148,68,1) 100%);
+text-align:right;
 
     }
     .dropdown-item{
@@ -181,10 +179,7 @@ margin:0px;
     #mobilepadding{
          padding-top: 100px;
      }
-     li.nav-item {
-      display:block;
-
-    }
+     
      
      }
 
@@ -205,6 +200,10 @@ margin:0px;
     
 
     }
+    li.nav-item:hover ul.dropdown-menu{
+      display:block;
+
+    }
      }
 
   </style>
@@ -216,7 +215,7 @@ margin:0px;
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html"><img src="logo-2.png" alt="" id="mobile"></a>
             <a class="navbar-brand" href="index.html"><img src="logo.png" alt="" id="web"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="dropdown" aria-expanded="false">
       <span class="navbar-toggler-icon"><img src="navbar-2.png" alt="" style="width:30px; margin:auto"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -225,7 +224,7 @@ margin:0px;
           <a class="nav-link active" aria-current="page" href="index.html">Home</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="myHref" id="navbarDropdown" role="button" data-target="leadership.html"  target="_blank" href="leadership.html" class="btn btn-default dropdown-toggle">
+          <a class="nav-link dropdown-toggle" id="myHref" id="navbarDropdown" role="button" data-target="leadership.html"  target="_blank" href="leadership.html" class="btn btn-default dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
             Leadership
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -241,7 +240,7 @@ margin:0px;
           <a class="nav-link" href="acquisition-criteria.html">Acquisition Criteria</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="investor-relations.html" id="navbarDropdown" role="button" data-target="investor-relations.html"  target="_blank" href="investor-relations.html" class="btn btn-default dropdown-toggle">
+          <a class="nav-link dropdown-toggle" href="investor-relations.html" id="navbarDropdown" role="button" data-target="investor-relations.html"  target="_blank" href="investor-relations.html" class="btn btn-default dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
           Investment Criteria</a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#">SEC Filings</a></li>
