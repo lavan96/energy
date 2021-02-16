@@ -100,16 +100,27 @@
       text-transform: uppercase;
      }
      .profilepic{
-         width: 300px;
+         width: 400px;
          background-size: cover;
          padding-bottom: 30px;
      }
+     
      .card-title{
-         padding-top: 20px;
+         padding-top: 0px;
      }
      .card-text{
          padding-bottom: 50px;
          font-family: 'Playfair Display', serif;
+     }
+     .card-body{
+        background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 35%, rgba(0,148,68,1) 100%);
+color:white;
+padding-top: 40px;
+padding-bottom: 40px;
+     }
+     h5{
+         font-size: 30px;
      }
      @media screen and (max-width: 768px) {
       .carousel-item{
@@ -185,7 +196,12 @@ margin:0px;
      }
      .profile-card{
          width:auto;
+         text-align: center;
      }
+     #card{
+         text-align:center;
+     }
+     
      h1{
         font-size:35px;
     }
@@ -268,59 +284,41 @@ margin:0px;
         </div>
       </nav>
 <div class="container">
-  <h1>Leadership</h1>
-  <div class="row" style="padding-top:20px;">
+  <h1>Investor Relations</h1>
+  <div class="row" class="container" style="padding-top:20px;" id="card">
     <div class="col-sm-4" id="firstrow" class="profile-card">
-        <a href="richard-westerdale.html">
-            <img src="dummy-profile.jpg" alt="" class="profilepic">
-          <h5 class="card-title">Richard W. Westerdale II</h5>
-          <p class="card-text">Chief Executive Officer and Chairman of Board</p>
-          </a>
- 
-    </div>
-    <div class="col-sm-4" id="firstrow">
-        <a href="christopher_close.html">
-            <img src="dummy-profile.jpg" alt="" class="profilepic">
-          <h5 class="card-title">Christopher J. Close</h5>
-          <p class="card-text">Chief Financial Officer</p>
-          </a>
-     
-    </div><div class="col-sm-4" id="firstrow">
-        <a href="narinder-singh.html">
-        <img src="dummy-profile.jpg" alt="" class="profilepic">
-            <h5 class="card-title">Narinder Singh</h5>
-            <p class="card-text"> Chief Strategy Officer</p>
-            </a>
-        
+    <div class="card" style="width: auto;">
+        <a href="#"></a>
+        <img src="dummy-profile.jpg" class="card-img-top" class="profilepic" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">SEC Filings</h5>
+        </div>
+    </a>
       </div>
-    </div>
-  <div class="row">
-    <div class="col-sm-4" id="secondrow">
-        <a href="jan-hein-jesse.html">
-            <img src="dummy-profile.jpg" alt="" class="profilepic">
-          <h5 class="card-title">Jan-Hein Jesse</h5>
-          <p class="card-text">Member of the Board</p>
-          </a>
-       
-      
-    </div>
-    <div class="col-sm-4" id="secondrow">
-        <a href="angela-minas.html">
-            <img src="dummy-profile.jpg" alt="" class="profilepic">
-          <h5 class="card-title">Angela A. Minas</h5>
-          <p class="card-text">Member of the Board</p>
-         </a>
-        
       </div>
-    <div class="col-sm-4" id="secondrow">
-        <a href="david-phillips.html">
-            <img src="dummy-profile.jpg" alt="" class="profilepic">
-            <h5 class="card-title">David L. Phillips</h5>
-            <p class="card-text">Member of the Board</p>
+      <div class="col-sm-4" id="firstrow" class="profile-card">
+        <div class="card" style="width: auto;">
+            <a href="#"></a>
+            <img src="dummy-profile.jpg" class="card-img-top" class="profilepic" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Government Documents</h5>
+            </div>
         </a>
           </div>
-       
-      </div>
+          </div>
+          <div class="col-sm-4" id="firstrow" class="profile-card">
+            <div class="card" style="width: auto;">
+                <a href="#"></a>
+                <img src="dummy-profile.jpg" class="card-img-top" class="profilepic" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">News</h5>
+                </div>
+            </a>
+              </div>
+              </div>
+              
+    </div>
+  
   </div>
     </div>
     <div>      
