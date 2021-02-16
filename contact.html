@@ -50,6 +50,7 @@
     }
     h1{
       font-family: 'Playfair Display', serif;
+      text-transform: uppercase;
       font-weight:600;
       color: #001178;
       font-size: 50px;
@@ -97,11 +98,20 @@
      }
      h2{
       
-      text-transform: uppercase;
+      
      }
      .btn{
         background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 35%, rgba(0,148,68,1) 100%);
+text-transform: uppercase;
+border-radius: 0px;
+     }
+     label{
+        text-transform: uppercase;
+        font-weight: 600;
+     }
+     .form{
+        border-radius: 0px;  
      }
      @media screen and (max-width: 768px) {
       .carousel-item{
@@ -245,19 +255,19 @@ margin:0px;
   <form class="row g-3">
     <div class="col-md-6">
         <label for="inputName" class="form-label">Name</label>
-        <input type="text" class="form-control" placeholder="Name" aria-label="First name">
+        <input type="text" class="form-control" placeholder="Name" aria-label="First name" class="form">
       </div>
     <div class="col-md-6">
       <label for="inputEmail" class="form-label">Email</label>
-      <input type="email" class="form-control" placeholder="Email" id="inputEmail4">
+      <input type="email" class="form-control" placeholder="Email" id="inputEmail4" class="form">
     </div>
     <div class="col-md-6">
         <label for="inputEmail" class="form-label">Phone Number</label>
-        <input type="text" class="form-control" placeholder="Phone Number" id="inputNumber">
+        <input type="text" class="form-control" placeholder="Phone Number" id="inputNumber"class="form">
       </div>
     <div class="col-md-12">
         <label for="inputName" class="form-label">Message</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Type Message Here" rows="6"></textarea>
+        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Type Message Here" rows="6" class="form"></textarea>
     </div>
     
     <div class="col-12">
