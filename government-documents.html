@@ -53,7 +53,6 @@
     h1{
       font-family: 'Playfair Display', serif;
       font-weight: 600;
-      text-transform: uppercase;
       color: #001178;
       font-size: 50px;
       padding-bottom:10px;
@@ -90,7 +89,7 @@
          width:200px;
      }
      p{
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Playfair Display', serif;
      }
      .carousel-caption{
        bottom:250px;
@@ -99,8 +98,46 @@
       font-size: 100px;
      }
      h2{
-      
-      
+      font-family: 'Baloo Tamma 2', cursive;
+      text-transform: uppercase;
+     }
+     .profilepic{
+         width: 400px;
+         background-size: cover;
+         padding-bottom: 30px;
+     }
+     
+     .card-title{
+         padding-top: 0px;
+     }
+     .card-text{
+         padding-bottom: 50px;
+         font-family: 'Playfair Display', serif;
+     }
+     .card-body{
+        background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 35%, rgba(0,148,68,1) 100%);
+color:white;
+padding-top: 40px;
+padding-bottom: 40px;
+     }
+     h5{
+         font-size: 30px;
+     }
+     .date{
+         font-weight: 600;
+         text-transform: uppercase;
+         font-size: 20px;
+     }
+     .color{
+         color: #001178;
+     }
+     .document{
+         margin-top: 30px;
+     }
+     ul{
+        list-style-type: none;
+        margin-left: -25px;
      }
      @media screen and (max-width: 768px) {
       .carousel-item{
@@ -161,13 +198,48 @@ margin:0px;
     #web{
       display:none;
     }
-    h1{
+
+    #secondrow{
+        margin-top:20px;
+    }
+
+    #firstrow{
+        margin-top:20px;
+        margin-bottom: 50px;
+    }
+    .profilepic{
+         
+         background-size: contain;
+         padding-bottom: 30px;
+     }
+     .profile-card{
+         width:auto;
+         text-align: center;
+     }
+     #card{
+         text-align:center;
+     }
+     
+     h1{
         font-size:35px;
+        text-transform: uppercase;
     }
     h2{
         font-size:20px;
     }
-    #mobilepadding{
+    .footer{
+      background-color:white;
+      color: #001178;
+      font-family: 'Hammersmith One', sans-serif;
+      font-size:20px;
+      padding:30px;
+     }
+
+     .footertext{
+       font-size:15px;
+       
+     }
+     #mobilepadding{
          padding-top: 100px;
      }
      }
@@ -189,6 +261,10 @@ margin:0px;
     
 
     }
+
+    #secondrow{
+        margin-top:20px;
+    }
      }
 
   </style>
@@ -200,90 +276,71 @@ margin:0px;
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html"><img src="logo-2.png" alt="" id="mobile"></a>
             <a class="navbar-brand" href="index.html"><img src="logo.png" alt="" id="web"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"><img src="navbar-2.png" alt="" style="width:30px; margin:auto"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="myHref" id="navbarDropdown" role="button" data-target="leadership.html"  target="_blank" href="leadership.html" class="btn btn-default dropdown-toggle">
-            Leadership
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="richard-westerdale.html">Richard W. Westerdale II</a></li>
-            <li><a class="dropdown-item" href="christopher_close.html">Christopher J. Close</a></li>
-            <li><a class="dropdown-item" href="narinder-singh.html">Narinder Singh</a></li>
-            <li><a class="dropdown-item" href="jan-hein-jesse.html">Jan-Hein Jesse</a></li>
-            <li><a class="dropdown-item" href="angela-minas.html">Angela A. Minas</a></li>
-            <li><a class="dropdown-item" href="david-phillips.html">David L. Phillips</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="acquisition-criteria.html">Acquisition Criteria</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="investor-relations.html" id="navbarDropdown" role="button" data-target="investor-relations.html"  target="_blank" href="investor-relations.html" class="btn btn-default dropdown-toggle">
-            Investor Relations
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="sec-filings.html">SEC Filings</a></li>
-            <li><a class="dropdown-item" href="government-documents.html">Government Documents</a></li>
-            <li><a class="dropdown-item" href="news.html">News</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><img src="navbar-2.png" alt="" style="width:30px; margin:auto"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="myHref" id="navbarDropdown" role="button" data-target="leadership.html"  target="_blank" href="leadership.html" class="btn btn-default dropdown-toggle">
+                  Leadership
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="richard-westerdale.html">Richard W. Westerdale II</a></li>
+                    <li><a class="dropdown-item" href="christopher_close.html">Christopher J. Close</a></li>
+                    <li><a class="dropdown-item" href="narinder-singh.html">Narinder Singh</a></li>
+                    <li><a class="dropdown-item" href="jan-hein-jesse.html">Jan-Hein Jesse</a></li>
+                    <li><a class="dropdown-item" href="angela-minas.html">Angela A. Minas</a></li>
+                    <li><a class="dropdown-item" href="david-phillips.html">David L. Phillips</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="acquisition-criteria.html">Acquisition Criteria</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="investor-relations.html" id="navbarDropdown" role="button" data-target="investor-relations.html"  target="_blank" href="investor-relations.html" class="btn btn-default dropdown-toggle">
+                  Investor Relations
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="sec-filings.html">SEC Filings</a></li>
+                  <li><a class="dropdown-item" href="government-documents.html">Government Documents</a></li>
+                  <li><a class="dropdown-item" href="news.html">News</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 <div class="container">
-  <h1>Richard W. Westerdale II</h1>
-  <h2>Chief Executive Officer and Chairman of Board</h2>
-  <hr>
-  <p>Richard W. Westerdale II serves as our Chief Executive Officer and Chairman of our board of directors.
-    Mr. Westerdale has over 30 years of experience in the energy industry. Mr. Westerdale previously served as
-    Senior Vice President and on the Board of Directors for Jiangnan Environmental Protection Group Inc., or
-    JNG, from 2018 until 2020. JNG is an international corporation that provides customized solutions,
-    technologies and services for environmental air quality and emissions control. Prior to joining JNG,
-    Mr. Westerdale was a Senior Advisor with the United States Department of State from 2011 to 2018 where
-    he advised senior principals, including the Secretary, on the nexus of energy with U.S. national security and
-    international energy policy priorities. Mr. Westerdale’s focus was on international energy affairs and their
-    effect on U.S. business interests. Mr. Westerdale participated in the IEA Governing Board, was an Executive
-    Director of the International Energy Forum and attended the G-7 and G-20 summits as a representative
-    of the United States.</p>
-    <p>Mr. Westerdale represented the Department in a variety of senior-level engagements, including bilateral
-    and multilateral fora, and carried out official visits to advance international engagement, forge cooperation
-    with partner-nations and establish agreements on a range of energy related initiatives.</p>
-    <p>Mr. Westerdale previously worked for ExxonMobil for approximately nineteen years, last as part of a
-    small staff group that reported directly to the Chairman and CEO. The team was responsible for ExxonMobil’s
-    reserve replacement globally and streamlined the corporate approvals process to enable timely responses to
-    market conditions. Prior to that, he held multiple other senior level positions at ExxonMobil, overseas in the
-    Middle East and Australia. He gained extensive commercial and marketing experience by working with host
-    governments and stewarding multi-cultural engagements. While in Abu Dhabi, his duties included initiation
-    of commercial strategies, coordination of internal resources, and development of proposals that included
-    competitive tender submissions as well as direct negotiations.</p>
-    <p>While in Australia, Mr. Westerdale was responsible for overseeing marketing efforts into the Asia
-    Pacific and developed the company’s first equity marketing strategy for LNG. Mr. Westerdale managed
-    natural gas assets in Western Australia and represented ExxonMobil in multiple joint ventures, including
-    leading the commercialization and economic development of the $6 billion Gorgon LNG project.</p>
-    <p>Mr. Westerdale was also responsible for negotiating commercial agreements (joint venture governance
-    and operating agreements) that facilitated resource monetization and worked closely with host governments
-    to obtain necessary approvals to advance projects (i.e., Barrow Island access and royalty structure). He
-    also led a team in evaluating an independent LNG marketing concept, including marketing strategies, which
-    accounted for $30 billion of sales contracts into Asia Pacific that underpinned project development.
-    Mr. Westerdale helped re-established ExxonMobil’s presence in Western Australia, by managing office
-    expansion and staffing efforts.</p>
-    <p>Prior to his tenure in Australia, Mr. Westerdale held a variety of positions in ExxonMobil’s downstream
-    business, as well as engineering and sales assignments. From 2000-2001, Mr. Westerdale had full profit and
-    loss responsibility for the New England Business Unit, which was a held separate company during the merger
-    of Exxon and Mobil, with revenues of two billion dollars and a twenty-six percent market share. This
-    included approximately 1,200 Mobil-branded dealer and distributor outlets in six states as well as distribution
-    terminals and trucking in the region.</p>
+  <h1>Government Documents</h1>
+  <ul style="margin-top: 50px;">
+      <li class="color">
+          
+          <a href="#"><p class="document">Lorem ipsum dolor sit amet</p></a>
+      </li>
+      <li class="color">
+        
+        <a href="#" ><p class="document">Lorem ipsum dolor sit amet</p></a>
+    </li>
+    <li class="color">
+        
+        <a href="#"><p class="document">Lorem ipsum dolor sit amet</p></a>
+    </li>
+    <li class="color">
+        
+        <a href="#"><p class="document">Lorem ipsum dolor sit amet</p></a>
+    </li>
+    <li class="color">
+        
+        <a href="#"><p class="document">Lorem ipsum dolor sit amet</p></a>
+    </li>
+  </ul>
     </div>
     <div>      
         <footer class="footer pt-5 pb-5"  id="footer">
@@ -325,7 +382,6 @@ margin:0px;
         
       </div>
     <script>
-
     </script>
 
     <!-- Optional JavaScript; choose one of the two! -->
