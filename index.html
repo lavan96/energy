@@ -88,6 +88,9 @@
      p{
       font-family: 'Roboto', sans-serif;
      }
+     p{
+      font-family: 'Playfair Display', serif;
+     }
      .carousel-caption{
        bottom:250px;
      }
@@ -97,6 +100,46 @@
      h2{
       
       
+     }
+     .btn{
+        background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 35%, rgba(0,148,68,1) 100%);
+text-transform: uppercase;
+border-radius: 20px;
+font-weight:800;
+width:200px;
+height:50px;
+margin-top: 40px;
+     }
+     #firstrow{
+        margin-top:20px;
+        padding: 50px 0 50px 20px;
+         
+         background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 35%, rgba(0,148,68,1) 100%);
+    }
+    
+     .card-title{
+       color:white;
+     }
+     #row{
+       margin-top: 50px;
+     }
+     ul{
+        list-style-type: none;
+        margin-left: -25px;
+     }
+     .date{
+         font-weight: 600;
+         text-transform: uppercase;
+         font-size: 20px;
+     }
+     .color{
+         color: #001178;
+         font-family: 'Playfair Display', serif;
+     }
+     .document{
+         margin-top: -20px;
      }
      @media screen and (max-width: 768px) {
       .carousel-item{
@@ -191,8 +234,21 @@ margin:0px;
       display:block;
 
     }
-     }
+    
+    #firstrow{
+      width:400px;
+      height: 200px;
+      margin: 10px;
+      padding-left: 50px;
+      
+    }
+    .card-title{
+      font-size: 30px;
+      padding-top: 25px;
+      margin-right: 70px;
 
+    }
+     }
   </style>
   <body>
     
@@ -210,31 +266,14 @@ margin:0px;
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="index.html">Home</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="myHref" id="navbarDropdown" role="button" data-target="leadership.html"  target="_blank" href="leadership.html" class="btn btn-default dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Leadership
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="richard-westerdale.html">Richard W. Westerdale II</a></li>
-            <li><a class="dropdown-item" href="christopher_close.html">Christopher J. Close</a></li>
-            <li><a class="dropdown-item" href="narinder-singh.html">Narinder Singh</a></li>
-            <li><a class="dropdown-item" href="jan-hein-jesse.html">Jan-Hein Jesse</a></li>
-            <li><a class="dropdown-item" href="angela-minas.html">Angela A. Minas</a></li>
-            <li><a class="dropdown-item" href="david-phillips.html">David L. Phillips</a></li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link" href="leadership.html">Leadership</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="acquisition-criteria.html">Acquisition Criteria</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="investor-relations.html" id="navbarDropdown" role="button" data-target="investor-relations.html"  target="_blank" href="investor-relations.html" class="btn btn-default dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Investor Relations
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="sec-filings.html">SEC Filings</a></li>
-            <li><a class="dropdown-item" href="government-documents.html">Government Documents</a></li>
-            <li><a class="dropdown-item" href="news.html">News</a></li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link" href="investor-relations.html">Investor Relations</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="contact.html">Contact</a>
@@ -243,58 +282,64 @@ margin:0px;
     </div>
   </div>
 </nav>
-<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="1.png" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h2 class="carousel-text">Leadership</h2>
-          
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="2.png" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h2 class="carousel-text">Acquisition Criteria</h2>
-          
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="3.png" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h2 class="carousel-text">Investor Relations</h2>
-          
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="4.png" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h2 class="carousel-text">Contact</h2>
-          
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
+
 <div class="container">
   <h1>A Brief Overview</h1>
-  <p>Integrated Energy Transition Acquisition Corp. (IET) is a newly incorporated "blank check company" formed under the laws of the State of Delaware on October 2, 2020 for the purpose of effecting a merger, capital stock exchange, asset acquisition, stock purchase, reorganization or similar business combination with one or more businesses, as our initial business combination. </p>
-  <p>While we may pursue an acquisition opportunity in any business, industry, sector or geographical location, we will seek to acquire one or more businesses focused on energy transition and sustainability. We plan to prioritize target opportunities in North American natural gas infrastructure and marketing, including liquefied natural gas, or LNG, infrastructure, particularly where there are also opportunities for strategic partnerships with natural gas fired power producers and projects outside of North America, but we may also pursue businesses in other sectors of the broader energy transition and sustainability arena, including companies that operate in the areas of renewable energy generation, carbon capture, hydrogen technologies, fuel cells, electric vehicle infrastructure, transportation, mobility, other energy transportation and storage and other energy transition technologies. </p>
-  <p>To date, our efforts have been limited to organizational activities as well as activities related to this offering. We have not selected any specific business combination target and we have not, nor has anyone on our behalf, initiated any substantive discussions, directly or indirectly, with any business combination target. </p>
-  <p>We plan to list the company on NYSE under a the symbol "ETA" for common stock and "ETA.WS" for warrants. </p>  
+  <p style="font-family: 'Roboto', serif;">Integrated Energy Transition Acquisition Corp. (IET) is a newly incorporated "blank check company" formed under the laws of the State of Delaware on October 2, 2020 for the purpose of effecting a merger, capital stock exchange, asset acquisition, stock purchase, reorganization or similar business combination with one or more businesses, as our initial business combination. </p>
+  <p style="font-family: 'Roboto', serif;">While we may pursue an acquisition opportunity in any business, industry, sector or geographical location, we will seek to acquire one or more businesses focused on energy transition and sustainability. We plan to prioritize target opportunities in North American natural gas infrastructure and marketing, including liquefied natural gas, or LNG, infrastructure, particularly where there are also opportunities for strategic partnerships with natural gas fired power producers and projects outside of North America, but we may also pursue businesses in other sectors of the broader energy transition and sustainability arena, including companies that operate in the areas of renewable energy generation, carbon capture, hydrogen technologies, fuel cells, electric vehicle infrastructure, transportation, mobility, other energy transportation and storage and other energy transition technologies. </p>
+  <p style="font-family: 'Roboto', serif;">To date, our efforts have been limited to organizational activities as well as activities related to this offering. We have not selected any specific business combination target and we have not, nor has anyone on our behalf, initiated any substantive discussions, directly or indirectly, with any business combination target. </p>
+  <p style="font-family: 'Roboto', serif;">We plan to list the company on NYSE under a the symbol "ETA" for common stock and "ETA.WS" for warrants. </p>
+  <button type="submit" class="btn btn-primary"><a href="acquisition-criteria.html" style="color:white;">Learn more</a></button>
+  <div class="row" class="container" id="row" style="padding-top:20px;">
+    <div class="col-sm-4" id="firstrow" class="profile-card">
+        <a href="leadership.html">
+
+          <h3 class="card-title">Our Team</h5>
+          
+          </a>
+ 
+    </div>
+    <div class="col-sm-4" id="firstrow" class="profile-card">
+        <a href="investor-relations.html">
+            
+          <h3 class="card-title">Investor Relations</h5>
+          
+          </a>
+     
+    </div><div class="col-sm-4" id="firstrow" class="profile-card">
+        <a href="contact.html">
+        
+            <h3 class="card-title">Contact</h5>
+            
+            </a>
+        
+      </div>
+    </div>
+    <div class="container" id="row">
+      <h3>Recent News</h1>
+      <ul style="margin-top: 50px;" style="font-family: 'Playfair Display', serif;">
+          <li class="color">
+              <p class="date">Lorem ipsum</p>
+              <a href="#"><p class="document">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum libero.</p></a>
+          </li>
+          <li class="color">
+            <p class="date">Lorem ipsum</p>
+            <a href="#" ><p class="document">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum libero.</p></a>
+        </li>
+        <li class="color">
+            <p class="date">Lorem ipsum</p>
+            <a href="#"><p class="document">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum libero.</p></a>
+        </li>
+        <li class="color">
+            <p class="date">Lorem ipsum</p>
+            <a href="#"><p class="document">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum libero.</p></a>
+        </li>
+        <li class="color">
+            <p class="date">Lorem ipsum</p>
+            <a href="#"><p class="document">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum libero.</p></a>
+        </li>
+      </ul>
+        </div>
     </div>
     <div>      
       <footer class="footer pt-5 pb-5"  id="footer">
