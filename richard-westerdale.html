@@ -117,15 +117,16 @@ margin-top: 40px;
     }
     .nav-link{
       margin-left: 10px;
-      color:white;
+      color:#072e5c;
     }
     .nav-link:hover{
       margin-left: 10px;
-      color:cornsilk;
+      color:#072e5c;
     }
     .dropdown-menu{
       background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 35%, rgba(0,148,68,1) 100%);
+text-align:right;
 
     }
     .dropdown-item{
@@ -138,8 +139,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 35%, rgba(0,148,68,1) 100%);
 
     }
     nav{
-      background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 35%, rgba(0,148,68,1) 100%);
+      background-color: white;
 margin:0px;
     }
     li{
@@ -159,16 +159,17 @@ margin:0px;
       background-image: url(navbar-2.png);
     }
     #mobile{
-      display:url(logo-2.png);
-      width: 200px;
-      background-repeat: none;
-      background-position: center;
-      margin-left: 0px;
+      display: none;
+      
       
       
     }
     #web{
-      display:none;
+      display:url(logo.png);
+      width: 200px;
+      background-repeat: none;
+      background-position: center;
+      margin-left: 0px;
     }
     h1{
         font-size:35px;
@@ -214,11 +215,12 @@ margin:0px;
     
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="logo-2.png" alt="" id="mobile"></a>
-            <a class="navbar-brand" href="index.html"><img src="logo.png" alt="" id="web"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"><img src="navbar-2.png" alt="" style="width:30px; margin:auto"></span>
-    </button>
+          <a class="navbar-brand" href="index.html"><img src="logo.png" alt="" id="web"></a>
+          <a class="navbar-brand" href="index.html"><img src="logo-2.png" alt="" id="mobile"></a>
+          
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDM4NCAzODQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGc+CgkJPGc+CgkJCTxyZWN0IHg9IjAiIHk9IjI3Ny4zMzMiIHdpZHRoPSIzODQiIGhlaWdodD0iNDIuNjY3IiBmaWxsPSIjMDcyZTVjIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3JlY3Q+CgkJCTxyZWN0IHg9IjAiIHk9IjE3MC42NjciIHdpZHRoPSIzODQiIGhlaWdodD0iNDIuNjY3IiBmaWxsPSIjMDcyZTVjIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3JlY3Q+CgkJCTxyZWN0IHg9IjAiIHk9IjY0IiB3aWR0aD0iMzg0IiBoZWlnaHQ9IjQyLjY2NyIgZmlsbD0iIzA3MmU1YyIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9yZWN0PgoJCTwvZz4KCTwvZz4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8L2c+PC9zdmc+" style="width: 30px;"/></span>
+      </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
