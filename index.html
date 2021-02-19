@@ -148,7 +148,9 @@ margin-top: 40px;
        font-size: 30px;
      }
      header{
-       background: url(2.png);
+       background: linear-gradient(90deg, rgba(0,47,96, 0.8) 0%, rgba(0,47,96, 0.8) 100%) ,url(2.png);
+       
+       
        background-repeat: no-repeat;
        background-position: center center;
        -webkit-background-size: cover ;
@@ -164,6 +166,7 @@ margin-top: 40px;
        align-items: center;
        flex-flow: column;
        
+       
 
      }
 
@@ -173,6 +176,21 @@ margin-top: 40px;
        margin: 40px;
        font-size: 40px;
        text-transform: capitalize;
+     }
+
+     .overlay{
+      background-color: rgb(0,125,255);
+background-color: linear-gradient(90deg, rgba(0,125,255,1) 0%, rgba(0,125,255,0.5385504543614321) 100%);
+
+     }
+
+     #home-body{
+       background: url(home-body.jpg);
+       filter: grayscale();
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-position: center;
+       
      }
 
      
@@ -303,6 +321,12 @@ margin:0px;
       margin-right: 70px;
 
     }
+    #home-body-2{
+      padding: 0 50px 0 50px;"
+    }
+    .row{
+      margin-top: 50px;
+    }
      }
   </style>
   <body>
@@ -337,16 +361,24 @@ margin:0px;
     </div>
   </div>
 </nav>
+<div class="overlay">
 <header>
 <h1 id="header">Bridging energy transition through low emission carbon fuel</h1>
 </header>
+</div>
 <div class="container">
-  <h1 >A Brief Overview</h1>
+  <div class="row">
+    <div class="col-sm-4" id="home-body"></div>
+    <div class="col-sm-8" id="home-body-2">
+      <h1 >A Brief Overview</h1>
   <p style="font-family: 'Roboto', serif;">Integrated Energy Transition Acquisition Corp. (IET) is a newly incorporated "blank check company" formed under the laws of the State of Delaware on October 2, 2020 for the purpose of effecting a merger, capital stock exchange, asset acquisition, stock purchase, reorganization or similar business combination with one or more businesses, as our initial business combination. </p>
   <p style="font-family: 'Roboto', serif;">While we may pursue an acquisition opportunity in any business, industry, sector or geographical location, we will seek to acquire one or more businesses focused on energy transition and sustainability. We plan to prioritize target opportunities in North American natural gas infrastructure and marketing, including liquefied natural gas, or LNG, infrastructure, particularly where there are also opportunities for strategic partnerships with natural gas fired power producers and projects outside of North America, but we may also pursue businesses in other sectors of the broader energy transition and sustainability arena, including companies that operate in the areas of renewable energy generation, carbon capture, hydrogen technologies, fuel cells, electric vehicle infrastructure, transportation, mobility, other energy transportation and storage and other energy transition technologies. </p>
   <p style="font-family: 'Roboto', serif;">To date, our efforts have been limited to organizational activities as well as activities related to this offering. We have not selected any specific business combination target and we have not, nor has anyone on our behalf, initiated any substantive discussions, directly or indirectly, with any business combination target. </p>
   <p style="font-family: 'Roboto', serif;">We plan to list the company on NYSE under a the symbol "ETA" for common stock and "ETA.WS" for warrants. </p>
   <a href="acquisition-criteria.html" style="color:white;"><button type="submit" class="btn btn-primary">Learn more</button></a>
+    </div>
+  
+</div>
   <div class="row" class="container" id="row" style="padding-top:70px; padding-bottom: 70px;">
     <div class="col-sm-4" id="firstrow" class="profile-card">
         <a href="leadership.html">
